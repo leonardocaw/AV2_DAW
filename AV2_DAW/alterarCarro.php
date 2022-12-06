@@ -14,8 +14,8 @@
         $placa=$_GET["placa"];
         
         $conn = new mysqli ($servidor, $user, $pass, $banco);
-        $sql="UPDATE `carro` SET `nome`= '$nome', `modelo`= '$modelo', `ano`='$ano', `cor`='$cor',  `localidade`=$localidade ,
-        `valor`= $valor, `placa`= $placa WHERE `placa` = '$placa'";
+        $sql="UPDATE `locadora` SET `nome`= '$nome', `modelo`= '$modelo', `ano`=$ano, `cor`='$cor', `localidade`='$localidade' ,
+        `valor`= $valor, `placa`= '$placa' WHERE `placa` = '$placa'";
         echo $sql;
         
         $result=$conn->query($sql);

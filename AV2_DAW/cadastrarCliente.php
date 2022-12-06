@@ -11,7 +11,7 @@
         
 
         $conn = new mysqli ($servidor, $user, $pass, $banco);
-        $sql="INSERT INTO `cadastrarcliente`(`nome`, `email`, `senha`) VALUES ('$nome', '$email', '$senha')";
+        $sql="INSERT INTO `usuarios`(`nome`, `email`, `senha`) VALUES ('$nome', '$email', '$senha')";
         $result=$conn->query($sql);
     }
 ?>

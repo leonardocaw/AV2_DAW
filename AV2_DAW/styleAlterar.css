@@ -1,0 +1,71 @@
+html{
+    background-color: rgba(233, 233, 233, 0.411);
+  
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+   margin-bottom: 100px;
+}
+form fieldset{
+font-family: Arial;
+background-color: rgba(58, 83, 76, 0.459);
+border: 0px;
+border-radius: 15px;
+color: rgb(0, 0, 0);
+
+}
+
+form fieldset legend{
+margin-left: 80px;
+font-weight: bold; 
+}
+
+form input {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(46, 49, 54);
+    border-radius: 15px;
+    outline: unset;
+}
+
+form input:focus{
+    background-color: #d2fcdf;
+}
+form input[type=button]{
+    background-color: rgba(0, 14, 1, 0.74);
+    color: rgb(255, 253, 253);
+    cursor: pointer;
+    width: 18%;
+}
+form label{
+    margin-left: 15px;
+    color: rgb(0, 0, 0) ;
+}
+body{
+    margin:0;
+}
+#menu ul{
+    margin:0;
+    background-color: rgb(32, 28, 30);
+    list-style: none;
+}
+
+#menu ul li  {
+display: inline;}
+
+#menu ul li a{
+    padding: 10px 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#menu ul li a:hover{
+  color: #000000
+}
+

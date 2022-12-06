@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Listagem de Veiculos Disponiveis</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Carros</title>
     <script src="locadora.js"></script>
-    <link rel="stylesheet" href="styleExibir.css">
+    <link rel="stylesheet" href="styleAlugar.css">
+
 </head>
-<body onload="carregaCarros();">
+<body>
     <div id="menu">
         <ul>
             <li><a href="exibirCarro.html">Exibir Carros</a></li>
@@ -18,11 +19,17 @@
             <li><a href="alterarCarro.html">Alterar carros</a></li>
             <li><a href="alugarCarro.html">Alterar carros</a></li>
 </div>
-
-
+    <form>
+        <fieldset style="width: 100px;">
+            <legend>Alugar carro</legend>
+            <input type="text" name="placa" id="placa" placeholder="Digite a placa do veiculo:"><br><br>
+          <input type="button" class="envio" name="envio" value="Alugar" onclick="carregaCarro();">
+         
+        </fieldset> 
+    </form>
     <table id="tabela">
         <tr>
-            <legend style="font-weight: bold;">EXIBIR TODOS OS MODELOS:</legend>
+            <legend style="font-weight: bold;">Carro a ser alugado:</legend>
             <th style="border:1px solid; padding:0px 25px;">Nome:</th>
             <th style="border:1px solid; padding:0px 25px;">Modelo:</th>
             <th style="border:1px solid; padding:0px 25px;">Ano:</th>
@@ -31,6 +38,7 @@
             <th style="border:1px solid; padding:0px 25px;">Valor: </th>
             <th style="border:1px solid; padding:0px 25px;">Placa</th>
         </tr>
+        
     </table>
 </body>
 

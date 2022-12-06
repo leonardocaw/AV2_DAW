@@ -8,7 +8,7 @@
         $placa= $_GET["placa"];
         $conn = new mysqli ($servidor, $user, $pass, $banco);
 
-        $sql="DELETE FROM `carros` WHERE `placa` = '$placa' ";
+        $sql="DELETE FROM `locadora` WHERE `placa` = '$placa' ";
         $result=$conn->query($sql);
     }
 ?>

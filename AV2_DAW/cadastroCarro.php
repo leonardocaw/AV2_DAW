@@ -14,7 +14,7 @@
         $placa=$_GET["placa"];
         
         $conn = new mysqli ($servidor, $user, $pass, $banco);
-        $sql="INSERT INTO `carro`(`nome`, `modelo`, `ano`, `cor`, `localidade`,`valor`,`placa`) VALUES ('$nome', '$modelo', '$ano','$cor', '$localidade', '$valor','$placa')";
+        $sql="INSERT INTO `locadora`(`nome`, `modelo`, `ano`, `cor`, `localidade`,`valor`,`placa`) VALUES ('$nome', '$modelo', $ano,'$cor', '$localidade', $valor,'$placa')";
         $result=$conn->query($sql);
     }
 ?>

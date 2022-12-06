@@ -1,0 +1,47 @@
+html{
+    background-color: rgba(233, 233, 233, 0.411);
+  
+}
+body{
+    margin:0;
+}
+#menu ul{
+    margin:0;
+    background-color: rgb(32, 28, 30);
+    list-style: none;
+}
+
+#menu ul li  {
+display: inline;
+}
+
+#menu ul li a{
+    padding: 10px 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+table tr th {
+
+    border:5px;
+    padding:2px 5px;
+    border: solid;
+    border-width: 0px;
+
+}
+
+table {
+   
+    font-style: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 800px;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(46, 49, 54);
+    border-radius: 15px;
+    background-color: rgba(80, 80, 78, 0.616);
+   
+}
