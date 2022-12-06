@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Listagem de Veiculos Disponiveis</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir Carros</title>
     <script src="locadora.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregaCarros();">
+<body>
     <div id="menu">
         <ul>
             <li><a href="exibirCarro.html">Exibir Carros</a></li>
@@ -17,15 +17,12 @@
             <li><a href="excluirCarro.html">Excluir carros</a></li>
             <li><a href="alterarCarro.html">Alterar carros</a></li>
 </div>
-    <table id="tabela">
-        <tr>
-            <th>Nome:</th>
-            <th>Modelo:</th>
-            <th>Ano:</th>
-            <th>Cor</th>
-            <th>Valor:</th>  
-        </tr>
-    </table>
+    <form>
+        <fieldset>
+            <legend>Busca de veiculo</legend>
+            <input type="text" placeholder="Digite a placa do veiculo" name="placa" id="placa" ><br><br>
+          <input type="button" class="envio" name="envio" value="Excluir" onclick="excluirForm();">
+        </fieldset>
+    </form>
 </body>
-
 </html>

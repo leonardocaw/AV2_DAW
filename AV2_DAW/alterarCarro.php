@@ -14,7 +14,10 @@
         $placa=$_GET["placa"];
         
         $conn = new mysqli ($servidor, $user, $pass, $banco);
-        $sql="INSERT INTO `carro`(`nome`, `modelo`, `ano`, `cor`, `localidade`,`valor`,`placa`) VALUES ('$nome', '$modelo', '$ano','$cor', '$localidade', '$valor','$placa')";
+        $sql="UPDATE `carro` SET `nome`= '$nome', `modelo`= '$modelo', `ano`='$ano', `cor`='$cor',  `localidade`=$localidade ,
+        `valor`= $valor, `placa`= $placa WHERE `placa` = '$placa'";
+        echo $sql;
+        
         $result=$conn->query($sql);
     }
 ?>

@@ -6,23 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Clientes</title>
     <script src="locadora.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="menu">
+        <ul>
+            <li><a href="exibirCarro.html">Exibir Carros</a></li>
+            <li><a href="cadastrarCliente.html">Cadastrar cliente</a></li>
+            <li><a href="cadastrarCarro.html">Cadastro de carros</a></li>
+            <li><a href="excluirCarro.html">Excluir carros</a></li>
+            <li><a href="alterarCarro.html">Alterar carros</a></li>
+</div>
     <form>
         <div>
         <fieldset>
             <legend>Cadastro de Carros</legend>
             
             <label>Nome:</label>
-            <input type="text" placeholder="Nome" name="nome" id="nome"><br><br>
-            <label>Marca</label>
-            <input type="text" placeholder="Qual a marca do carro?" name="marca" id="marca"><br><br>
+            <input type="text" placeholder="Nome/modelo?" name="nome" id="nome"><br><br>
+            <label>Modelo</label>
+            <input type="text" placeholder="Qual a marca do veiculo?" name="modelo" id="modelo"><br><br>
             <label>Ano:</label>
-            <input type="text" placeholder="Qual o ano carro?" name="marca" id="marca"><br><br>
+            <input type="text" placeholder="Qual o ano do veiculo?" name="ano" id="ano"><br><br>
             <label>cor:</label>
-            <input type="text" placeholder="Qual a cor?" name="marca" id="marca"><br><br>
+            <input type="text" placeholder="Qual a cor do veiculo?" name="cor" id="cor"><br><br>
+            <label>Localidade:</label>
+            <input type="text" placeholder="Qual o local do veiculo?" name="localidade" id="localidade"><br><br>
             <label>Valor:</label>
-            <input type="text" placeholder="Qual o valor?" name="grupoS" id="grupoS"><br><br>
+            <input type="text" placeholder="Qual o valor?" name="valor" id="valor"><br><br>
+            <label>Placa:</label>
+            <input type="text" placeholder="Qual a placa do veiculo?" name="placa" id="placa"><br><br>
             <input type="button" name="envio" value="Enviar" onclick="enviarCarro();">
             </fieldset>
         </div>

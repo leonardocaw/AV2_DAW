@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de clientes</title>
+    <script src="locadora.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="exibirCarro.html">Exibir Carros</a></li>
+            <li><a href="cadastrarCliente.html">Cadastrar cliente</a></li>
+            <li><a href="cadastrarCarro.html">Cadastro de carros</a></li>
+            <li><a href="excluirCarro.html">Excluir carros</a></li>
+            <li><a href="alterarCarro.html">Alterar carros</a></li>
+</div>
+    <form id="formcadastrar">
+        <div>
+        <fieldset>
+            <legend>Cadastro de cliente</legend>
+            
+            <label>Nome:</label>
+            <input type="text" placeholder="Qual seu Nome?" name="nome" id="nome"><br><br>
+            <label>email:</label>
+            <input type="text" placeholder="Qual o seu email?" name="email" id="email"><br><br>
+            <label>senha:</label>
+            <input type="text" placeholder="Qual sua senha?" name="senha" id="senha"><br><br>
+            <input type="button" name="envio" value="Enviar" onclick="enviarForm();">
+            </fieldset>
+        </div>
+        </form>
+    </body>
+ </html

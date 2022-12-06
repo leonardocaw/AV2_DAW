@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Carros</title>
+    <script src="locadora.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="exibirCarro.html">Exibir Carros</a></li>
+            <li><a href="cadastrarCliente.html">Cadastrar cliente</a></li>
+            <li><a href="cadastrarCarro.html">Cadastro de carros</a></li>
+            <li><a href="excluirCarro.html">Excluir carros</a></li>
+            <li><a href="alterarCarro.html">Alterar carros</a></li>
+</div>
+    <form>
+        <fieldset>
+            <legend>Alterar carros</legend>
+            <input type="text" name="placa" id="placa" placeholder="Digite a placa do veiculo"><br><br>
+          <input type="button" class="envio" name="envio" value="Buscar" onclick="buscarCarroAlt();">
+        </fieldset> 
+    </form>
+
+    <form id="formAlt">
+        <fieldset>
+            <legend>Novos dados</legend>
+            <label>Nome:</label>
+            <input type = "text" name = "nome" id = "nomeAltV" value=""><br><br>
+            <label>Modelo:</label>
+            <input type = "text" name = "modelo" id = "modeloAltV" value=""><br><br>
+            <label>Ano:</label>
+            <input type = "text" name = "ano" id = "anoAltV" value=""><br><br>
+            <label>Cor:</label>
+            <input type = "text" name = "cor" id = "corAltV" value=""><br><br>
+            <label>Localidade:</label>
+            <input type = "text" name = "localidade" id = "localidadeAltV" value=""><br><br>
+            <label>Preço:</label>
+            <input type = "text" name = "valor" id = "valorAltV" value=""><br><br>
+            <label>Placa:</label>
+            <input type = "text" name = "placa" id = "placaAltV" value=""><br><br>
+            <input type = "button" class="envio" name = "envio" value="Alterar" 
+              onclick="enviarFormAlt();">
+          </fieldset>
+      </form>
+</body>
+</html>
